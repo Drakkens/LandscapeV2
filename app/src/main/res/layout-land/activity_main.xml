@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="412dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginBottom="215dp"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="215dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            android:id="@+id/linearLayout2">
+
+        <TextView
+                android:layout_width="match_parent"
+                android:layout_height="83dp"
+                android:id="@+id/questionView"
+                android:textStyle="bold"
+                android:textAlignment="center"
+                android:fontFamily="casual"
+                android:textSize="20sp" />
+
+        <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            <Button
+                    android:text="@string/strFalse"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/falseButton"
+                    android:layout_weight="1"
+                    style="@style/Widget.AppCompat.Button.Borderless"
+                    app:iconTint="#F44336"
+                    android:textColor="#000000"
+                    android:fontFamily="casual"
+                    android:textSize="16sp"
+                    android:textAlignment="center"
+                    android:textStyle="bold" />
+
+            <Button
+                    android:text="@string/strTrue"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/trueButton"
+                    android:layout_weight="1"
+                    style="@style/Widget.AppCompat.Button.Borderless"
+                    app:iconTint="#F44336"
+                    android:textColor="#000000"
+                    android:fontFamily="casual"
+                    android:textSize="16sp"
+                    android:textAlignment="center"
+                    android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="49dp">
+
+            <Button
+                    android:text="@string/previous"
+                    android:layout_width="89dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/previousButton"
+                    android:layout_weight="1"
+                    style="@style/Widget.AppCompat.Button.Borderless"
+                    app:iconTint="#F44336"
+                    android:textColor="#000000"
+                    android:fontFamily="casual"
+                    android:textSize="16sp"
+                    android:textAlignment="center"
+                    android:textStyle="bold" />
+
+            <Button
+                    android:text="@string/next"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/nextButton"
+                    android:layout_weight="1"
+                    style="@style/Widget.AppCompat.Button.Borderless"
+                    app:iconTint="#F44336"
+                    android:textColor="#000000"
+                    android:fontFamily="casual"
+                    android:textSize="16sp"
+                    android:textAlignment="center"
+                    android:textStyle="bold" />
+        </LinearLayout>
+
+        <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/answer"
+                android:fontFamily="casual"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textAlignment="center" />
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
